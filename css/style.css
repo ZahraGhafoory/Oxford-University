@@ -1,0 +1,504 @@
+* {
+   border-radius: border-box;
+}
+body{
+   margin: 0px;
+   padding: 0px;
+   background-color: rgba(110, 122, 12, 0.596)
+}
+.headmobile{
+   display: none;
+}
+#head{
+   width: 100%;
+   height: 500px;
+   background-image: url(../img/v.jpg);
+   background-repeat: no-repeat;
+   background-size:100% 100%;
+   z-index: -1;
+}
+#head>h1{
+   font-size: 60px;
+   text-align: center;
+   text-shadow: 5px 5px 5px rgba(129, 128, 48, 0.829);
+   color:  rgb(11, 32, 2);
+   margin-top: 0px; 
+   word-spacing: 7px;
+   letter-spacing: 3px;
+
+}
+#navbar{
+   position: fixed;
+   width: 100%;
+   height: 60px;
+   top: 0;
+   background-color: rgb(34, 92, 29); 
+   z-index: +5;  
+}
+#leftnav{
+float: left;
+}
+#rightnav{
+   float: right;
+   margin-top: 5px;
+}
+.crl{
+   clear: both
+}
+nav ul{
+   padding: 0px;
+   margin-top: 0px;
+   background-color: rgb(34, 92, 29);
+    list-style: none;
+}
+nav >ul >li{
+ display: inline-block;
+  font-size: 20px; 
+  border-right: 1px solid white;
+
+}
+nav >ul >li:last-child{
+ border-right: none;  
+}
+nav>ul>li>a , nav>ul>li>ul>li>a{
+   color: rgb(136, 145, 62);
+   padding: 13px 20px;
+   text-decoration: none;
+   display: block;
+}
+nav>ul>li>ul{
+   position: absolute;
+   display: none;
+   margin: auto;
+}
+nav>ul>li:hover ul{
+   display: block;
+}
+.active, .active a{
+   color: rgb(23, 59, 2);
+   background-color: rgb(136, 145, 62);
+   text-decoration: underline; 
+}
+nav >ul >li >ul >li{
+   border-bottom: 1px solid white;
+   font-size: 15px;
+   padding: 10px 32px;
+}
+.search{
+   background-image: url(../img/er.png);
+   background-size: 15px;
+   background-color: rgb(136, 145, 62);
+   background-repeat: no-repeat;
+   border: 2px solid white; 
+   border-radius: 10px;
+   width: 250px;
+   background-position: 5px 5px;
+   box-sizing: border-box;
+   transition: width 1s ease-out 1s, background-color 1s linear 1s;
+}
+input[type=search] {
+    padding: 15px 20px 15px 50px;
+    box-sizing: border-box; 
+}
+.search:focus{
+   width: 350px;
+   background-color: white;
+}
+.search::placeholder{
+   font-size: 20px;
+   color: darkgray;
+  
+}
+.logo{
+   padding-top: 6%;
+   /* padding-left: 40px; */
+   width: 10%;
+   float: left;
+   animation: logo 10s linear 1s infinite;
+}
+@keyframes logo {
+   0% {
+filter: blur(4px);
+transform: rotateY(0deg)
+   }
+   25% {
+filter: contrast(100%);
+   }
+50%{
+filter: saturate(4);
+   }
+70% {
+filter: grayscale(160%);
+   }
+100% {
+filter: brightness(70%);
+transform: rotateY(360deg)
+   }
+}
+#main{
+   font-size: 20px;
+   text-align: justify;
+}
+.mainsection{
+  width: 70%;
+  margin: 10px auto; 
+  text-align: center;
+}
+h1{
+   font-size: 45px;
+}
+#head, h1, h3{
+   text-align: center;
+   color: rgba(23, 59, 2, 0.884);
+   text-shadow: 3px 5px 5px rgb(136, 145, 62);
+}
+#main2{
+   margin-top: 10em;
+   /* text-align: justify;
+
+   width: 100%; */
+}
+#main2>div{
+   width: 33%;
+   float: left;
+   box-sizing: border-box;
+   padding: 10px;
+   display: block;
+}
+#main2>div>img{
+   width: 100%;
+   height: 222px;
+   display: block;
+}
+#main2>div>p{
+   color: rgb(136, 145, 62);
+   font-size: 20px;
+   text-indent: 40px;
+   text-align: justify; 
+   padding-top: 0px;
+   margin-top: 0;
+   width: 100%;
+   box-sizing: border-box;
+
+}
+#main2>p, #Admissions{
+   font-size: 30px;
+   color: rgb(77, 82, 12);
+   /* display: block;
+   text-align: center; */
+}
+.h2{
+   font-size: 30px;
+   color: rgb(77, 82, 12); 
+   font-weight: 100;  
+}
+#main2>p {
+display: block;
+text-align: center;
+margin-left: 130px;
+} 
+.main3{
+margin-top: 100px;
+width: 100%;
+height: 500px;
+background-image: url(../img/The-Manor-House-at-Foxhills.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+animation: main3 7s linear 1s infinite;
+}
+@keyframes main3 {
+   0%{
+      background-image: url("../img/Bodleian_Library.jpg");
+      background-size: 100% 100%;
+  }
+  25%{
+      background-image: url("../img/Punting_in_Oxford.jpg");
+      background-size: 100% 100%;
+     
+  }
+  50%{
+      background-image: url("../img/Radcliffe_camera_and_All_Souls_College.jpg");
+      background-size: 100% 100%;
+     
+  }
+  75%{
+      background-image: url("../img/Traveling_through_time.jpg");
+      background-size: 100% 100%;
+      
+  }
+  100%{
+      background-image: url("../img/The-Manor-House-at-Foxhills.jpg");
+      background-size: 100% 100%;
+      
+  } 
+}
+#main4{
+   margin-top: 100px;
+}
+#main4>p{
+   font-size: 25px; 
+   color:rgba(23, 59, 2, 0.884); 
+   display: block;
+   text-align: center;
+   margin-left: 120px;
+}
+#main4>a{
+   display: inline-block;
+   box-sizing: border-box;
+   padding: 2%;
+   width: 24%;
+   /* animation: ; */
+
+}
+#main4>a>img{
+   display: block;
+   height: 100px;
+   width: 100%;
+   filter: sepia(100%);
+   animation: filter 10S linear infinite;
+}
+@keyframes filter {
+   0%{
+       filter: blur(4px);
+   }
+   25%{
+       filter: brightness(70%);
+   }
+   50%{
+       filter: contrast(180%);
+   }
+   75%{
+       filter: grayscale(100%);
+   }
+   100%{
+       filter: saturate(4);
+   } 
+}
+.footer{
+   background-color: rgb(10, 39, 3);
+   width: 100%;
+   padding: 3%;
+  overflow: auto;
+}
+.lastfooter{
+float: right;
+}
+#leftfooter{
+   width: 50%;
+  padding-left: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.lablcol{
+   width: 10%;
+   float: left;
+   margin-right: 15px; 
+} 
+input[type=text], textarea{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0px;
+   border: solid 2px rgb(110, 136, 17);
+}
+textarea::placeholder, input::placeholder{
+   color: rgba(42, 59, 2, 0.562);
+}
+.send{
+   background-color: rgba(166, 190, 7, 0.288);
+  color: white;
+   width: 150px;
+   height: 50px;
+   float: right;
+   margin-right: 100px;
+   margin-top: 20px;
+ 
+}
+.send:hover{
+   box-shadow: 0px 3px 20px rgb(126, 136, 83);
+cursor: pointer;
+}
+textarea{
+  resize: none;
+
+}
+.fildcol{
+   width: 70%;
+   float: left;
+}
+.row{
+   clear: both;
+}
+.leb{
+   color: white;
+   margin: 10px 0;
+   padding: 10px 0;
+   display: block;
+}
+.footer>.lastfooter>ul, .footer>.lastfooter>ul>li>a>i{
+   list-style: none;
+   color: rgb(126, 136, 83);
+   font-size: 50px;
+}
+.footer>.lastfooter>ul{
+   padding-left: 180px;
+   text-align: center;
+   margin-top: 0px;
+}
+.lastfooter{
+   text-align: center;
+   margin: 10px auto; 
+   width: 50%;
+   box-sizing: border-box;
+   display: inline-block;
+}
+.lastfooter>h1, #leftfooter>h1, .lastfooter>a, .lastfooter>p{
+   color: white;
+   font-size: 20px;
+}
+.lastfooter>ul>li{
+   float: left;
+   margin: 10px;
+}
+.lastfooter>ul>li>a>i:hover{
+color: white;
+}
+.lastfooter>a{
+   display: block;
+   text-decoration: none;
+}
+.lastfooter>p{
+   text-align: center;
+}
+.form{
+margin: 10% auto;
+}
+.submit{
+   background-color: rgb(10, 39, 3); 
+   color: white; 
+   float: right;
+   margin-right: 20%;
+   width: 20%;
+   height: 50px;
+   font-size: 15px;
+   letter-spacing: 2px; 
+   margin-top: 10px;
+}
+.submit:hover{
+   background-color: rgb(110, 131, 15);
+   color: rgb(242, 243, 237);
+   box-shadow: 0px 16px 35px rgb(41, 51, 6);
+   cursor: pointer;
+}
+.lable{
+   padding: 10px 0;
+   color: rgb(33, 70, 3);
+   margin: 10px 0;
+   display: block;
+}
+.input::placeholder{
+color :rgb(76, 156, 10); 
+font-size: 13px;
+}
+.i{
+   float: left;
+   margin-top: 10px;
+   width: 22%;
+   box-sizing: border-box;
+   padding: 10px;
+}
+.i>img{
+   display: block;
+   width: 100%;
+   height:110px;  
+}
+.p>p{
+   display: block;
+   width: 100%;
+}
+p{
+   text-align: justify;
+   width: 70%;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 20px;
+}
+.servic{
+   transition: transform 3s;
+}
+.servic:hover{
+   transform: scale(1.2);
+}
+.about1>img{
+  float: left;
+  width: 190px;
+  height: 190px; 
+  z-index: +3;
+  margin-top: 20px;
+}
+.about1>p, .about>p{
+text-align: justify;
+font-size: 20px;
+z-index: +3;
+display: block;
+width: 100%;
+}
+.real{
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  width: 32%; 
+}
+.real>img{
+   display: block;
+   width: 100%;
+   height: 200px;  
+}
+.me{
+   width: 65%;
+   display: inline-block;
+   text-align: justify;
+}
+.me>p{
+   box-sizing: border-box;
+   width: 100%;
+   font-size: 20px;
+   padding-left: 15px;
+   margin-top: 0px;
+}
+.text, .text>ul>li>a, .text>ul>li{
+list-style: none;
+text-decoration: none;
+font-size: 30px;
+text-align: center;
+color: white;
+padding: 10px auto;
+}
+.text{
+margin-top: 35px;
+}
+.container{
+display: flex;
+gap: 15px;
+margin-left: 48px;
+}
+.overlay{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+width: 0;
+height: 100%;
+opacity: 0;
+transition: width 5s linear; 
+} 
+.real:hover .overlay{
+ opacity: 0.7;
+ background-color: rgba(23, 59, 2, 0.884);
+ width: 100%;  
+}
+.continer{
+   width:100%;
+}
